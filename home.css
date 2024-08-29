@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    height: 100vh;
+    position: relative;
+    cursor: url('images/cats_paw.png'), auto;
+    background-size: cover;
+}
+
+.background {
+    position: absolute; /* Відносне позиціонування */
+    width: 100%;
+    height: 120%;
+    z-index: 0;
+    background-color: rgb(217, 171, 171); /* Колір фону */
+}
+
+.background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Стиль для центрування тексту на фоні */
+.center-text {
+    position: absolute;
+    top: 2%;
+    left: 48%;
+    transform: translate(-55%, -10%);
+    color:#F4D9D0 ;
+    font-size: 6em; /* Розмір шрифту */
+    text-align: center; /* Вирівнювання тексту по центру */
+    z-index: 2; /* Вперед відносно фону */
+}
+
+.banner {
+    background-color: #921A40 ;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.container {
+    position: relative;
+}
+
+.button {
+    display: inline-block;
+    background-color: #921A40;
+    color: rgb(244, 217, 208);
+    text-decoration: none;
+    padding: 50px 98px;
+    margin: 0 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1001;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #C75B7A;
+}
+
+
+/* Стилізуємо контейнер форми */
+.form-container {
+    position: fixed;
+    top: 65%;
+    right: 40px;
+    transform: translateY(-50%);
+    max-width: 200px;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #b395ff;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+/* Стилізуємо форму */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Мітки */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Текстові поля */
+input[type="text"],
+input[type="email"],
+input[type="phone number"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #c3b7ff;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Кнопка відправки */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+/* Кнопка при наведенні */
+input[type="submit"]:hover {
+    background-color: #b300a4;
+}
+
+/* Контейнер для центрування тексту зліва */
+.containert {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 300px;
+    left: 40px;
+}
+
+/* Стилі для тексту */
+.text {
+    text-align: left;
+}
+
+.main-text {
+    font-size: 4em;
+    font-weight: bold;
+    color: #C75B7A;
+}
+
+/* Контейнер для центрування тексту зліва */
+.containert2 {
+    width: 850px;
+    height: 200px;
+    position: absolute;
+    top: 170px;
+    left: 15px;
+}
+
+/* Стилі для тексту */
+.text {
+    text-align: center;
+}
+
+.main-text2 {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #000000;
+}
+
+

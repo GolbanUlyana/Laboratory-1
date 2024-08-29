@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    height: 100vh;
+    position: relative;
+    cursor: url('images/cats_paw.png'), auto;
+    background-size: cover;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 140%;
+    z-index: 0;
+    background-color: rgb(217, 171, 171);
+}
+
+.background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.center-text {
+    position: absolute;
+    top: 10%;
+    left: 48%;
+    transform: translate(-55%, -10%);
+    color: #F4D9D0;
+    font-size: 3em;
+    text-align: center;
+    z-index: 2;
+}
+
+.banner {
+    background-color: #921A40;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.container {
+    position: relative;
+}
+
+.button {
+    display: inline-block;
+    background-color: #921A40;
+    color: rgb(244, 217, 208);
+    text-decoration: none;
+    padding: 50px 98px;
+    margin: 0 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1001;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #C75B7A;
+}
+
+.services-header {
+    text-align: center;
+    margin-top: 95px; /* Відступ, щоб заголовок не перекривався банером */
+    z-index: 3;
+    position: relative;
+    color: #50186c;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Відстань між картками */
+    padding: 200px;
+    position: relative;
+    z-index: 3;
+}
+
+.service-card {
+    flex: 1 1 calc(30% - 20px);
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  
+}  
+
+.service-card img {
+    width: 70px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #333;
+}
